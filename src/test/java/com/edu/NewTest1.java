@@ -15,9 +15,9 @@ import org.openqa.selenium.chrome.options; //add
 public class NewTest1 {
   chrome_options = Options();//
   chrome_options.add_argument("--headless"); //add
-	
+  driver = webdriver.Chrome(executable_path="./chromedriver", options=chrome_options); //add	
   //WebDriver driver;
-  driver = webdriver.Chrome(executable_path="./chromedriver", options=chrome_options); //add
+  
  
   @BeforeMethod
   public void beforeMethod() {
