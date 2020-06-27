@@ -9,19 +9,17 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
-import org.openqa.selenium.chrome.options; //add
+
 
 public class NewTest2 {
-	//WebDriver driver;
-  chrome_options = Options(); //add
-  chrome_options.add_argument("--headless"); //add
-  driver = webdriver.Chrome(executable_path="./chromedriver", options=chrome_options); //add
+	WebDriver driver;
+
 
   @BeforeMethod
   public void launch() {
 	  
 	    System.setProperty("webdriver.chrome.driver", "chromedriver");
-	    //driver = new ChromeDriver();
+	    driver = new ChromeDriver();
 	    driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 	    driver.get("https://facebook.com");
 
