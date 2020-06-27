@@ -10,16 +10,20 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
+import org.openqa.selenium.chrome.options; //add
 
 public class NewTest1 {
+  chrome_options = Options();//
+  chrome_options.add_argument("--headless"); //add
 	
-  WebDriver driver;
+  //WebDriver driver;
+  driver = webdriver.Chrome(executable_path="./chromedriver", options=chrome_options); //add
  
   @BeforeMethod
   public void beforeMethod() {
 	  
 	    System.setProperty("webdriver.chrome.driver", "chromedriver");
-	    driver = new ChromeDriver();
+	    //driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		driver.get("http://35.193.29.31:30015/sampleapp/");
   }
