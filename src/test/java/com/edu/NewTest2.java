@@ -20,7 +20,7 @@ public class NewTest2 {
 
   @BeforeMethod
   public void launch() {
-	    ptions.addArguments("--headless", "--disable-gpu", "--window-size=1920,1200","--ignore-certificate-errors", "--silent"); //add
+	    options.addArguments("--headless", "--disable-gpu", "--window-size=1920,1200","--ignore-certificate-errors", "--silent"); //add
 	    System.setProperty("webdriver.chrome.driver", "chromedriver");
 	    driver = new ChromeDriver(options); //add options
 	    driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
