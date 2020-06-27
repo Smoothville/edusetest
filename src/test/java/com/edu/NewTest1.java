@@ -18,13 +18,11 @@ public class NewTest1 {
   WebDriver driver;
    // Add options to Google Chrome. The window-size is important for responsive sites
    ChromeOptions options = new ChromeOptions();//add
-   options.addArguments("headless");//add
-   //options.addArguments("window-size=1200x600");
   
  
   @BeforeMethod
   public void beforeMethod() {
-	  
+	    options.addArguments("--headless", "--disable-gpu", "--window-size=1920,1200","--ignore-certificate-errors", "--silent"); //add
 	    System.setProperty("webdriver.chrome.driver", "chromedriver");
 	    driver = new ChromeDriver(options);//add
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
