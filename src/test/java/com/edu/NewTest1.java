@@ -21,7 +21,7 @@ public class NewTest1 {
 	    System.setProperty("webdriver.chrome.driver", "chromedriver");
 	    driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-		driver.get("http://34.72.141.194:30015/sampleapp/");
+		driver.get("http://35.193.29.31:30015/sampleapp/");
   }
   
   @Test
