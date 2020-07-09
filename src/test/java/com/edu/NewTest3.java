@@ -32,7 +32,7 @@ public class NewTest3 {
   @Test
   public void verifyAbout() {
 	  	
-    driver.findElement((By.id("About Us")).click();
+    driver.findElement((By.id("About Us")).click());
      String result = driver.findElement(By.id("PID-ab2-pg"));
     System.out.println(result);
     Assert.assertEquals(result, result);
