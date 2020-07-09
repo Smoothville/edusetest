@@ -11,7 +11,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.chrome.WebElement;
+
 
 public class NewTest3 {
 	
@@ -32,9 +32,10 @@ public class NewTest3 {
   @Test
   public void verifyAbout() {
 	  	
-    driver.findElement((By.id("About Us"))).click();
+    driver.findElement(By.id("About Us")).click();
+     driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
       WebElement TxtBoxContent = driver.findElement(By.id("PID-ab2-pg"));
-     String result = TxtBoxContent.getAttribute("value");
+     String result = TxtBoxContent.getAttribute();
      System.out.println("Printing " + result);
     System.out.println(result);
     Assert.assertEquals(result, result);
