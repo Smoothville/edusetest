@@ -34,7 +34,7 @@ public class NewTest3 {
 	  	
     driver.findElement((By.id("About Us"))).click();
       WebElement TxtBoxContent = driver.findElement(By.id("PID-ab2-pg"));
-     String result TxtBoxContent.getAttribute("value");
+     String result = TxtBoxContent.getAttribute("value");
      System.out.println("Printing " + result);
     System.out.println(result);
     Assert.assertEquals(result, result);
