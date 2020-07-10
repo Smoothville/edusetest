@@ -35,16 +35,16 @@ public class NewTest3 {
 	  	
     driver.findElement(By.id("About Us")).click();
      driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-//       WebElement TxtBoxContent = driver.findElement(By.id("PID-ab2-pg"));
-//       String result = TxtBoxContent.getText();
-//      System.out.println("Printing " + result);
-//    System.out.println(result);
-//      Assert.assertEquals(result, result);
+      WebElement TxtBoxContent = driver.findElement(By.id("PID-ab2-pg"));
+      String result = TxtBoxContent.getText();
+     System.out.println("Printing " + result);
+   System.out.println(result);
+     Assert.assertEquals(result, result);
 	  System.out.println("Test Successful.");
- if(driver.getPageSource().contains("This is about page. Lorem Ipsum")){
-System.out.println("Test Successful.");
-}else{
-System.out.println("Test Unsuccessful.");		
+//  if(driver.getPageSource().contains("This is about page. Lorem Ipsum")){
+// System.out.println("Test Successful.");
+// }else{
+// System.out.println("Test Unsuccessful.");		
 	}
   }
   
