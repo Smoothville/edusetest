@@ -11,7 +11,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.WebElement
+import org.openqa.selenium.WebElement;
 
 
 public class NewTest3 {
