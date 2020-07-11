@@ -11,21 +11,21 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.WebElement;
+// import org.openqa.selenium.WebElement;
 
 
 public class NewTest3 {
 	
   WebDriver driver;
    // Add options to Google Chrome. The window-size is important for responsive sites
-   ChromeOptions options = new ChromeOptions();//add
+//    ChromeOptions options = new ChromeOptions();//add
   
  
   @BeforeMethod
   public void beforeMethod() {
-	    options.addArguments("--headless", "--disable-gpu", "--window-size=1920,1200","--ignore-certificate-errors", "--silent"); //add
+// 	    options.addArguments("--headless", "--disable-gpu", "--window-size=1920,1200","--ignore-certificate-errors", "--silent"); //add
 	    System.setProperty("webdriver.chrome.driver", "chromedriver");
-	    driver = new ChromeDriver(options);//add
+	    driver = new ChromeDriver();//add options
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		driver.get("192.168.42.9:8081");
   }
