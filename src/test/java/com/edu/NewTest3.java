@@ -36,17 +36,17 @@ public class NewTest3 {
 	  
 	    String x = driver.getCurrentUrl();
 	    System.out.println(x);
-	    Assert.assertEquals(x, "http://192.168.42.9:8081/content/about-us.php");
+	    Assert.assertEquals(x, "http://192.168.42.9:8081/");
   }
   
-  @Test
-  public void verifytitle() {
+//   @Test
+//   public void verifytitle() {
 	  
-        String a = driver.getTitle();
-        System.out.println(a);
-        //Assert.assertEquals(a, "Facebook");
-	//System.out.println("Test Successful.");    
-  }
+//         String a = driver.getTitle();
+//         System.out.println(a);
+//         //Assert.assertEquals(a, "Facebook");
+// 	//System.out.println("Test Successful.");    
+//   }
   
   @AfterMethod
   public void close() {
