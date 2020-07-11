@@ -52,7 +52,8 @@ public class NewTest3 {
   public void close() {
 	  
 	  driver.close();
-  }	
+  }
+}
 	
 	
   
