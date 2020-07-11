@@ -33,8 +33,7 @@ public class NewTest2 {
 	  
 	    String x = driver.getCurrentUrl();
 	    System.out.println(x);
-	 Assert.assertEquals(x, "http://192.168.42.9:8081/"); 
-// 	    Assert.assertEquals(x, "https://www.facebook.com/");
+	    Assert.assertEquals(x, "https://www.facebook.com/");
   }
   
   @Test
